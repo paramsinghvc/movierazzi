@@ -1,6 +1,10 @@
-# ItunesPrac
+# Movierazzi
+
+An Angular 2 app with TypeScript & Redux + ImmutableJS.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
+
+<img width="1280" alt="screen shot 2017-03-09 at 10 57 24 pm" src="https://cloud.githubusercontent.com/assets/4329912/23762550/4433a452-051c-11e7-813e-38808f6e7bcd.png">
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
