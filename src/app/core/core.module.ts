@@ -8,6 +8,10 @@ import { store } from './utils/build-redux-store.service';
 
 const TMDB_API_KEY = `80008a565ce00c783952aebe37b66bb1`;
 
+export function depInject(http) {
+	return new ApiBridgeService(TMDB_API_KEY, http);
+}
+
 @NgModule({
 	imports: [
 		CommonModule,
@@ -30,9 +34,7 @@ export class CoreModule {
 			providers: [
 				{
 					provide: ApiBridgeService,
-					useFactory: (http) => {
-						return new ApiBridgeService(TMDB_API_KEY, http);
-					},
+					useFactory: depInject,
 					deps: [Http]
 				}
 			]
