@@ -1,0 +1,6 @@
+<div class="main-holder">
+    <p>Discover</p>
+    <section class="main-content">
+    	<app-movie-item *ngFor="let movie of (movies$ | async)" [movie]="movie"></app-movie-item>
+    </section>
+</div>
